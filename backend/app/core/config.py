@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     app_name: str = "Email Finder API"
     debug: bool = False
     database_echo: bool = False
-    database_url: str = "postgresql+psycopg://postgres:postgres@localhost:5432/email_finder"
+    database_url: str = "sqlite:///./email_finder.db"
     redis_url: str = "redis://localhost:6379/0"
     exa_api_key: str | None = None
     exa_base_url: str = "https://api.exa.ai"
