@@ -43,7 +43,7 @@ After=network.target redis-server.service
 Wants=redis-server.service
 
 [Service]
-Type=notify
+Type=simple
 User=$APP_USER
 WorkingDirectory=$BACKEND_DIR
 Environment="PATH=$BACKEND_DIR/venv/bin"
